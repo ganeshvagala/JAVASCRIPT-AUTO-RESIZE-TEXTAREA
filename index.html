@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <title>
+    Live Character
+  </title>
+<meta name="vieport" content="width=device,intial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h2>TEXT</h2>
+    <textarea placeholder="Type something here..." required></textarea>
+  </div>
+  <script>
+    const textarea=document.querySelector("textarea");
+    textarea.addEventListener("keyup",e =>{
+      let scHieght=e.target.scrollHeight;
+      textarea.style.height="auto";
+      textarea.style.height=`${scHieght}px`;
+
+    });
+  </script>
+</body>
+</html>
